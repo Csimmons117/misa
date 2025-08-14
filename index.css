@@ -61,16 +61,52 @@ td{
 	height: 50%;
 	border: purple , 10px, solid;
 }
-.teamMembers{
-	margin-left: auto;
-	margin-right: auto;
-	width: 30%;
+
+.title{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background-color: lightgray;
 }
-.memberDescription{
+.main{
+	display:inline-flex;
+	
+	width: 100%;
+	height: 50%;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background-color: lightgray;
+
+}
+
+.picture{
+	width: 150px;
+	height: 150px;
+	border: 2px,solid black;
+	overflow: hidden;
+	background-color: black;
+
+	
+}
+.picture img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+
+}
+.words{
+	display: flex;
+	flex-direction: column;
+	align-items: center;      /* horizontal centering */
+	justify-content: center;  /* vertical centering */
 	text-align: center;
+	
+	height: 150px;
 }
-
-
+.space{
+	width: 50px;
+}
 
 .Announcements{
 	margin-left: auto;
