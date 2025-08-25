@@ -113,7 +113,8 @@ td{
 	margin-right: auto;
 	width: 35%;
 	/*border: blue, 10px, solid;*/
-	display: flex;
+	display: flex; /*this must be here before the center*/
+	justify-content: center;/*Center the main div */
 
 }
 .imageLeft{
