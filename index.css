@@ -1,139 +1,160 @@
-*{
-	margin: 0px;
-	padding: 0px;
-}
-/*Start of nav*/
-nav{
-	font-size: 20px;
-	margin: 20px;
-	border: 10px, pink, solid;
-	text-align: center;
 
+* {
+      margin: 0;
+          padding: 0;
+              box-sizing: border-box;
+                  font-family: Arial, Helvetica, sans-serif;
+                  }
 
-}
-nav ul{
-list-style: none;
-display: inline-flex;
+                  body {
+                        line-height: 1.6;
+                            color: #333;
+                            }
 
+                            /* Navigation */
+                            .navbar {
+                                  display: flex;
+                                      justify-content: space-between;
+                                          align-items: center;
+                                              padding: 20px 60px;
+                                                  background: #111;
+                                                      color: white;
+                                                      }
 
-}
-nav li{
-	padding: 10px;
+                                                      .logo {
+                                                            font-size: 22px;
+                                                                font-weight: bold;
+                                                                }
 
-}
-a{
-	text-decoration: none;
-	color: black;
-}
+                                                                .nav-links {
+                                                                      list-style: none;
+                                                                          display: flex;
+                                                                              gap: 25px;
+                                                                              }
 
-/*End of nav*/
-table{
-	
-	margin: 60px;
-	
-}
+                                                                              .nav-links a {
+                                                                                    color: white;
+                                                                                        text-decoration: none;
+                                                                                            font-size: 16px;
+                                                                                            }
 
-td{
-	border: red, 10px, solid;
-	padding: 10px;
-	
-}
-.test{
-	border: red,10px,solid;
-}
-.helloworld{
-	border: hotpink, 10px, solid ;
-	font-size: 50px;
-	text-align: center;
-}
-.welcome{
-	padding-left: auto;
-	padding-right: auto;
-	font-size: 20px;
-	width: 50%;
+                                                                                            .nav-links .btn {
+                                                                                                  background: crimson;
+                                                                                                      padding: 8px 14px;
+                                                                                                          border-radius: 4px;
+                                                                                                          }
 
-}
+                                                                                                          /* Hero */
+                                                                                                          .hero {
+                                                                                                                height: 80vh;
+                                                                                                                    background: linear-gradient(to right, #111, #444);
+                                                                                                                        color: white;
+                                                                                                                            display: flex;
+                                                                                                                                flex-direction: column;
+                                                                                                                                    align-items: center;
+                                                                                                                                        justify-content: center;
+                                                                                                                                            text-align: center;
+                                                                                                                                                padding: 20px;
+                                                                                                                                                }
 
-.SignUpLink{
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	height: 50%;
-	border: purple , 10px, solid;
-}
+                                                                                                                                                .hero h1 {
+                                                                                                                                                      font-size: 42px;
+                                                                                                                                                          margin-bottom: 15px;
+                                                                                                                                                          }
 
-.title{
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	background-color: lightgray;
-}
-.main{
-	display:inline-flex;
-	
-	width: 100%;
-	height: 50%;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	background-color: lightgray;
+                                                                                                                                                          .hero button {
+                                                                                                                                                                margin-top: 20px;
+                                                                                                                                                                    padding: 12px 25px;
+                                                                                                                                                                        font-size: 16px;
+                                                                                                                                                                            border: none;
+                                                                                                                                                                                background: crimson;
+                                                                                                                                                                                    color: white;
+                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                        }
 
-}
+                                                                                                                                                                                        /* Sections */
+                                                                                                                                                                                        .section {
+                                                                                                                                                                                              padding: 70px 15%;
+                                                                                                                                                                                                  text-align: center;
+                                                                                                                                                                                                  }
 
-.picture{
-	width: 150px;
-	height: 150px;
-	border: 2px,solid black;
-	overflow: hidden;
-	background-color: black;
+                                                                                                                                                                                                  .section h2 {
+                                                                                                                                                                                                        font-size: 32px;
+                                                                                                                                                                                                            margin-bottom: 20px;
+                                                                                                                                                                                                            }
 
-	
-}
-.picture img{
-	height: 100%;
-	width: 100%;
-	object-fit: contain;
+                                                                                                                                                                                                            .section.gray {
+                                                                                                                                                                                                                  background: #f4f4f4;
+                                                                                                                                                                                                                  }
 
-}
-.words{
-	display: flex;
-	flex-direction: column;
-	align-items: center;      /* horizontal centering */
-	justify-content: center;  /* vertical centering */
-	text-align: center;
-	
-	height: 150px;
-}
-.space{
-	width: 50px;
-}
+                                                                                                                                                                                                                  /* Team */
+                                                                                                                                                                                                                  .team-container {
+                                                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                                                            justify-content: center;
+                                                                                                                                                                                                                                gap: 30px;
+                                                                                                                                                                                                                                    margin-top: 40px;
+                                                                                                                                                                                                                                    }
 
-.Announcements{
-	margin-left: auto;
-	margin-right: auto;
-	width: 35%;
-	/*border: blue, 10px, solid;*/
-	display: flex; /*this must be here before the center*/
-	justify-content: center;/*Center the main div */
+                                                                                                                                                                                                                                    .card {
+                                                                                                                                                                                                                                          background: white;
+                                                                                                                                                                                                                                              padding: 25px;
+                                                                                                                                                                                                                                                  width: 220px;
+                                                                                                                                                                                                                                                      border-radius: 8px;
+                                                                                                                                                                                                                                                          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                                                                                                                                                                                                                                                          }
 
-}
-.imageLeft{
-	border: black, 5px, solid;
+                                                                                                                                                                                                                                                          .avatar {
+                                                                                                                                                                                                                                                                width: 100px;
+                                                                                                                                                                                                                                                                    height: 100px;
+                                                                                                                                                                                                                                                                        background: #ccc;
+                                                                                                                                                                                                                                                                            border-radius: 50%;
+                                                                                                                                                                                                                                                                                margin: 0 auto 15px;
+                                                                                                                                                                                                                                                                                }
 
-}
+                                                                                                                                                                                                                                                                                /* Announcements */
+                                                                                                                                                                                                                                                                                .announcement {
+                                                                                                                                                                                                                                                                                      background: #fff;
+                                                                                                                                                                                                                                                                                          padding: 20px;
+                                                                                                                                                                                                                                                                                              margin: 15px auto;
+                                                                                                                                                                                                                                                                                                  max-width: 600px;
+                                                                                                                                                                                                                                                                                                      border-left: 5px solid crimson;
+                                                                                                                                                                                                                                                                                                      }
 
-.description{
-	padding: 10px;
-	border: black, 5px, solid;
-	text-align: center;
-	background-color: red;
-	color: white;
-}
+                                                                                                                                                                                                                                                                                                      /* Buttons */
+                                                                                                                                                                                                                                                                                                      .btn.large {
+                                                                                                                                                                                                                                                                                                            display: inline-block;
+                                                                                                                                                                                                                                                                                                                margin-top: 20px;
+                                                                                                                                                                                                                                                                                                                    background: crimson;
+                                                                                                                                                                                                                                                                                                                        color: white;
+                                                                                                                                                                                                                                                                                                                            padding: 14px 30px;
+                                                                                                                                                                                                                                                                                                                                text-decoration: none;
+                                                                                                                                                                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                                                                                                                                                                    }
 
-
-.meetings{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-
+                                                                                                                                                                                                                                                                                                                                    /* Footer */
+                                                                                                                                                                                                                                                                                                                                    footer {
+                                                                                                                                                                                                                                                                                                                                          background: #111;
+                                                                                                                                                                                                                                                                                                                                              color: white;
+                                                                                                                                                                                                                                                                                                                                                  text-align: center;
+                                                                                                                                                                                                                                                                                                                                                      padding: 20px;
+                                                                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                  }
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                  }
+                                                                                                                                                                                        }
+                                                                                                                                                          }
+                                                                                                                                                }
+                                                                                                          }
+                                                                                            }
+                                                                              }
+                                                                }
+                                                      }
+                            }
+                  }
 }
