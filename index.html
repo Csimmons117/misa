@@ -1,102 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Timeline Example</title>
-<style>
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  padding: 40px;
-}
-
-/* Timeline Container */
-.timeline {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  padding-left: 50px;
-}
-
-/* Vertical Line */
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #ccc;
-}
-
-/* Timeline Item */
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-/* Dot */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -36px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background: white;
-  border: 3px solid #007bff;
-  border-radius: 50%;
-}
-
-/* Content Box */
-.timeline-content {
-  background: white;
-  padding: 15px 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.timeline-content h3 {
-  margin: 0 0 5px;
-}
-
-.timeline-content span {
-  font-size: 14px;
-  color: #777;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSUN MISA</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
-<div class="timeline">
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Senior Developer</h3>
-      <span>2022 - Present</span>
-      <p>Working on frontend architecture and UI systems.</p>
-    </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Junior Developer</h3>
-      <span>2020 - 2022</span>
-      <p>Worked on web applications and bug fixes.</p>
-    </div>
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">CSUN MISA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#join" class="btn">Join</a></li>
+        </ul>
+    </nav>
 
-  <div class="timeline-item">
-    <div class="timeline-content">
-      <h3>Intern</h3>
-      <span>2019 - 2020</span>
-      <p>Assisted in building responsive UI components.</p>
-    </div>
-  </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Management Information Systems Association</h1>
+        <p>Empowering CSUN students through technology, business, and professional growth.</p>
+        <button onclick="scrollToJoin()">Join MISA</button>
+    </section>
 
-</div>
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            The Management Information Systems Association (MISA) at CSUN is a student-run,
+            non-profit organization dedicated to preparing students for careers in Information
+            Systems and Technology.
+        </p>
+        <p>
+            We offer weekly meetings, professional workshops, networking opportunities, and
+            guest speakers from industry leaders in Data Analytics, Cybersecurity, IT Audit,
+            Systems Analysis, and more.
+        </p>
+    </section>
 
+    <!-- Team -->
+    <section id="team" class="section gray">
+        <h2>Our Team</h2>
+        <div class="team-container">
+            <div class="card">
+                <div class="avatar"></div>
+                <h3>President</h3>
+                <p>John Doe</p>
+            </div>
+            <div class="card">
+                <div class="avatar"></div>
+                <h3>Vice President</h3>
+                <p>Jane Smith</p>
+            </div>
+            <div class="card">
+                <div class="avatar"></div>
+                <h3>Treasurer</h3>
+                <p>Alex Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements -->
+    <section id="announcements" class="section">
+        <h2>Announcements</h2>
+        <div class="announcement">
+            <h4>📅 Weekly Meeting</h4>
+            <p>Every Wednesday at 6:00 PM — Nazarian Hall</p>
+        </div>
+        <div class="announcement">
+            <h4>🎤 Guest Speaker Event</h4>
+            <p>Industry professionals discussing careers in IT & Analytics</p>
+        </div>
+    </section>
+
+    <!-- Join -->
+    <section id="join" class="section gray">
+        <h2>Join MISA</h2>
+        <p>Become part of a community that builds careers and connections.</p>
+        <a href="#" class="btn large">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CSUN MISA | David Nazarian College of Business & Economics</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
