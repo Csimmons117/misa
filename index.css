@@ -56,7 +56,7 @@ body{
 }
 
 .nav-links a:hover{
-    color:white;
+    color:red;
 }
 
 .nav-links .btn{
@@ -119,6 +119,33 @@ body{
 
 .section.gray{
     background:#f4f4f4;
+}
+
+/* SENIORS SECTION */
+
+
+.team-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap:30px;
+}
+/* Title */
+.senior-title{
+    font-size:36px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+/* Make cards smaller for hero overlay */
+.seniors .team-card{
+    backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.95);
+}
+
+/* limit width */
+.seniors{
+    max-width:1000px;
+    margin:auto;
 }
 
 /* =========================
@@ -223,7 +250,9 @@ body{
 
 
 .hero1{
-    height:80vh;
+    min-height:80vh; /* allow growth */
+    padding:80px 10%;
+
     background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
         url(./pictures/seniors.jpg);
@@ -231,13 +260,42 @@ body{
     background-position:center;
 
     color:white;
+
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
+    justify-content:flex-start; /* KEY FIX */
     align-items:center;
     text-align:center;
-    padding-bottom:40px;
-} 
+}
+
+.hero1 .team-grid{
+    width:100%;
+}
+
+.seniors{
+    max-width:1200px; /* give it more room */
+}
+
+.seniors.team-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.announcement-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.announcement-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.announcement-text{
+    text-align: left;
+}
 
 /* =========================
    FOOTER
